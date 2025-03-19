@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2CC9521C2D8A7C1300A9C2F9 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 2CC9521B2D8A7C1300A9C2F9 /* SDWebImage */; };
+		2CC9521E2D8A7C1300A9C2F9 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2CC9521D2D8A7C1300A9C2F9 /* SDWebImageMapKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		2CC951862D8A7A4E00A9C2F9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC9521E2D8A7C1300A9C2F9 /* SDWebImageMapKit in Frameworks */,
+				2CC9521C2D8A7C1300A9C2F9 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +132,8 @@
 			);
 			name = ProductApp;
 			packageProductDependencies = (
+				2CC9521B2D8A7C1300A9C2F9 /* SDWebImage */,
+				2CC9521D2D8A7C1300A9C2F9 /* SDWebImageMapKit */,
 			);
 			productName = ProductApp;
 			productReference = 2CC9516F2D8A7A4C00A9C2F9 /* ProductApp.app */;
@@ -208,6 +217,9 @@
 			);
 			mainGroup = 2CC951662D8A7A4C00A9C2F9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2CC9521A2D8A7C1300A9C2F9 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2CC951702D8A7A4C00A9C2F9 /* Products */;
 			projectDirPath = "";
@@ -569,6 +581,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2CC9521A2D8A7C1300A9C2F9 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.21.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2CC9521B2D8A7C1300A9C2F9 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CC9521A2D8A7C1300A9C2F9 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		2CC9521D2D8A7C1300A9C2F9 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CC9521A2D8A7C1300A9C2F9 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2CC951672D8A7A4C00A9C2F9 /* Project object */;
 }
